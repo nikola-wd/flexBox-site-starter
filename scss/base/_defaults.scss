@@ -1,0 +1,70 @@
+/* base */
+::selection {
+  background-color: $c-gray;
+  color: #fff;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+*, 
+*:hover, 
+*:focus {
+  outline: none !important;
+}
+
+html,
+body,
+button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+  font: 400 16px/1.42857143 $font-def;
+  text-size-adjust: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+
+ol, 
+ul {
+  list-style: none;
+}
+
+
+.container {
+  width: 100%;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+// define max container width here
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
